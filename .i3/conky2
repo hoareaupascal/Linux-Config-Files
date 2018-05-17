@@ -1,0 +1,3 @@
+## Stuff after 'TEXT' will be formatted on screen
+TEXT
+    $kernel    $acpitemp °C     ${cpu cpu1}%     ${mem}     ${if_up wlp2s0}${addr wlp2s0}  ${downspeedf wlp2s0} KiB/s     ${battery_percent BAT1} %      ${time %d-%m-%Y}   ${time %H:%M}

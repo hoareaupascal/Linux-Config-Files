@@ -1,0 +1,24 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+# Update interval in seconds
+update_interval 2.0
+total_run_times 0
+override_utf8_locale yes
+
+TEXT
+
+[{ "full_text" : "HD" , "color" : "\#ff8849"  } ,
+${image ~/Icons/xbm/cpu9.xbm }
+ { "full_text" : "${fs_free /}/${fs_size /}" , "color" : "\#77e2f2" } , 
+ { "full_text" : "RAM" , "color" : "\#ff8849" } ,
+ { "full_text" : "${mem}", "color" : "\#77e2f2"  },
+ { "full_text" : "WIFI" , "color" : "\#ff8849" } ,
+ { "full_text" : "${wireless_link_qual wlp2s0b1}/${wireless_link_qual_max wlp2s0b1}", "color" : "\#77e2f2" },
+ { "full_text" : "POWER", "color" : "\#ff8849" } ,
+ { "full_text" : "${battery BAT1}" , "color" : 
+  ${if_match ${battery_percent 
+BAT1}<20}"\#bbbbbb"${else}"\#ffffff"${endif} } , 
+ { "full_text" : "${time %I:%M%P}", "color" : "\#77e2f2" }]  ,

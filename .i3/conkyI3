@@ -1,0 +1,20 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+# Update interval in seconds
+update_interval 2.0
+total_run_times 0
+override_utf8_locale yes
+
+TEXT
+
+[
+{ "full_text" : "LINUX" , "color" : "\#09af9b" } ,
+{ "full_text" : "${kernel}" , "color" : "\#ffffff" } ,
+{ "full_text" : "HDD" , "color" : "\#09af9b" } ,
+ { "full_text" : "${fs_free /}/${fs_size /}" , "color" : "\#ffffff" } ,
+{ "full_text" : "RAM" , "color" : "\#09af9b" } ,
+ { "full_text" : "${mem}", "color" : "\#77e2f2"  }, 
+ { "full_text" : "${time %I:%M%P}" }]  ,
